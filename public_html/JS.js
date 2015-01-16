@@ -6,14 +6,27 @@
 
 
 $("document").ready(function(){
+    //This allows me to create a background color for my text
     $(".practice").css("background-color", "blue");
+    
+    //this allows me to put a background color for a more specific line of text
     $('p:first').css("background-color", "indigo");
     $('h1').css("background-color", "brown");
+    
+    //this allows me to show that you clicked a buttonn which basically pops up a notification
     $('#oneButton').bind('click', alertButtonClick);
+    
+    //this allows me to change the text when the mouse hover overs it
     $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+    
+    //This allows me to add a paragraph and delete a paragraph
     $('#addAPara').bind('click', addAPara);
     $('#removeAPara').bind('click', removeAPara);
+    
+    //this allows me to toggle the text like slide on text up  to show another
     $('#toggleTheText').bind('click', toggleTheText);
+    
+    //this allows me to add an accordion to my page
     $('#superHumans').accordion({header: "h3"});
 });
 

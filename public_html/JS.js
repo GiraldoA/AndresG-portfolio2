@@ -28,6 +28,10 @@ $("document").ready(function(){
     
     //this allows me to add an accordion to my page
     $('#superHumans').accordion({header: "h3"});
+    
+    $("#tabs").tabs();
+    $("#tabs").css({'width':'500'});
+    
 });
 
 function mouseOverMe() {
